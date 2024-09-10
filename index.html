@@ -1,344 +1,381 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document t</title>
 
-
-        <title>TASK11</title>
-        <link
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     />
-
-        <style>*{
-            color: orange;
-        
-            
-        }
-
-            
-             nav{
-            font-family:"Dancing Script", cursive;
     
-            
-            width: 100%;
-
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: #333;
             color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+       .logo{}
+       nav ul{
+        list-style: none;
+            display: none;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+       }
+
+       .sec1{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             padding: 20px;
-            font-size: 20px;
+            animation: hotel 7s linear  alternate infinite;
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+           
+            
+            
+       }
+       @keyframes hotel {
+           0%{
+        background:url('https://th.bing.com/th?id=OIP.oetnNwsceeQQo36_Qz27MQHaE8&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2');
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+
+           }
+           40%{
+        background:url('https://th.bing.com/th?id=OIP.QONnfLxMWp9_84B-ld7pQQHaE8&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.3&pid=3.1&rm=2');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+           }
+           80%{
+        background:url('https://th.bing.com/th/id/OIP.R6Y1yAxnp-z9WLbjv0ph-AHaE8?w=286&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+           }
+           100%{
+        background:url('https://th.bing.com/th/id/OIP.LAKlyp7D03xGufDu_LE6mAHaE8?w=271&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+           }}
+       
+
+       .sec1 img{
+        width: 300px;
+       }
+       .sec2{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+
+       }
+
+       .sec2 img{
+        width: 300px;
+        transition: all .5s linear;
+       animation: phone 2s linear infinite alternate;
+        } 
+    
+    @keyframes phone {
+        from{
+            transform: translateX(0);
+
         }
+        to{
+            transform: translateX(150px);
 
-        ul{
-            font-weight: bolder;
-
-            margin-left: 950px;
-            margin-top: -650px;
-            ;
         }
+       }
 
-        .list2{
-            margin-left: 100px;
-            margin-top: -20px;
-        }
-        .list3{
-            margin-left: 200px;
-            margin-top: -20px;
-        }
-        .list4{
-            margin-left: 300px;
-            margin-top: -20px;}
 
-            .sec1{
-        
+       button{
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+       }
 
+       .sec2Heading{
+        margin-top: 50px;
+        text-align: center;
+        font-family: sans-serif;
+       }
+
+       .empty{
+        width: 300px;
+        height: 4px;
+        background-color: yellow;
+        margin: auto;
+        border-radius: 50%;
+       }
+
+.sec3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    flex-wrap: wrap;
+}
+       .sec3Images{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        opacity: .5;
+        transition: .2s all linear;
+
+       }
+       .sec3Images:hover{
+        opacity: 1;
+       }
+
+       .sec4{
         margin-top: 10px;
         display: flex;
-        gap: 10px;}
-
-        .text{
-        font-weight: bolder;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 650px;
-        margin-left: -180px;}
-        .sec1 img{
-            border-radius: 50%;
-            margin-left: 300px;
-            margin-top: 800px;
-            display: flex;
-            width: 300px;
-        } 
-
-        .sec2{
-            margin-top: 300px;
-            display: flex;
-            
-            ;
-            gap: 10px;
-
-        }
-        .text2{
-            border: 5px solid orange;
-            border-radius: 50px;
-            margin-top: -150px;
-
-
-            margin-left: -600px;
-            width: 900px;
-            
-        }
-        .sec2 img{
-            border-radius: 50%;
-            margin-left: 607px;
-            margin-top: -500px;
-            width: 300px;
-        height: 300px;}
-        .sec3{
-            margin-top: 300px;
-            display: flex;
-            
-            ;
-            gap: 10px;
-
-        }
-        .text3{
-            margin-top: -500px;
-
-
-            margin-left: -550px;
-            width: 250px;
-            
-        }
-        .sec3 img{
-            border-radius: 50%;
-            margin-left: 930px;
-            margin-top: -900px;
-            width: 300px;
-        height: 250px;}
-
-
-        .text5{
-            border: 5px solid blue;
-            border-radius: 50px;
-            
-            margin-left: 100px;
-            margin-top: 450px;
-            width:700px;
-        }
-        .text6{
-            border: 5px solid green;
-            border-radius: 50px;
-            margin-left: 700px;
-            margin-top: 100px;
-            width:700px
-
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
         
-        }
-        .text7{
-            margin-left: 600px;
-            margin-top: 100px;
-        }
-
-        .form{
-            font-weight: bolder;
-            display: flex;
-
-            margin-top: 40px;
-            margin-left: 600px;
-            width: 800px;
-            
-        }
-        
-
-            
-        
-        footer{
-           /* margin-top: 100px;*/
-           
-
-            display: flex;
-            justify-content: center;
-            background-color: black;
-            color: white;
-            margin: 50px auto ;
-            text-align: center;
-            flex-direction: column;
-            padding: 40px;
-            
-           
-            
-            
-            
-        }
-        
-
-
-    
-    
-        .mainDiv{
-            margin-bottom: -300px;
-            width: 100%;
-            height:700px;
-           
-            ;
-            background-image: url('https://culturalindia.org.in/wp-content/uploads/2023/08/77th-independence-day-images-1.jpg');
-
-            ;
-            background-size: cover
-            
-           
-           ;
-        }
-
-
-
-    
-
-    </style>
-            
-    </head>
-    <body>
-        <div class="mainDiv">
-        <nav>
-            <div class="logo"></div>
-                 
-                <span>
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.w0QhT8_GPVGLfKMDZDQnrAAAAA&pid=Api&P=0&h=180" alt=""
-                    width="100px">
-                    
+       }
+       .card{
+        width: 700px;
+        height: auto;
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 10px;
+       }
+       .card img{
+        width: 100%;
+        height: auto;
+       }
+.sec5{
+    width: 400px;
+    margin: 20px auto;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #333;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
  
-                    
-                </span> 
-            
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: lightblue;
+}
+
+
+footer{
+    display: flex;
+   justify-content: space-around;
+    gap: 50px;
+ 
+
+}
+
+.footer{
+    padding: 20px 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+footer ul{
+    list-style: none;
+}
+
+footer p{
+    width: 200px;
+}
+       @media only screen and (min-width: 768px) {
+       nav ul{
+            display: flex;
+        }
+        .bar{
+            display: none;
+        }
+
+        .sec1{
+            gap: 20px;
+            flex-direction: row;
+        }
+        .sec2{
+            gap: 20px;
+            flex-direction: row;
+        }
+        
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Project</li>
+        </ul>
+
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        
-            
-            <ul>
-                <li class="list1">HOME</li>
-                <li class="list2">INFO</li>
-                <li class="list3">ABOUT</li>
-                <li class="list4">CONTENT</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="sec1 img">
-        
-            
-         <span>  
-        <img src="https://th.bing.com/th/id/OIP.H98Z85Orv6XZCFgiBsrSegHaEo?w=273&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"alt=""
-        
-         >
-        
-    </span>
-        <div class="text">
-                
-                <h1>HISTORY OF INDEPENDENCE DAY</h1>
-                
-            </div>
-        </div> 
+    </nav>
+
+    <!-- ========== Start Section-1 ========== -->
     
+
+    <div class="sec1">
+        <div class="sec1Text">
+
         
-            </div>
-            <div class="sec2 img">
-        
-            
-            
-                <img src="https://th.bing.com/th/id/OIP.qZMe7KpUNqQstQb6vJ99twHaEa?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"alt="">
-                <div class="text2">
-                    <p>The British East India Company initially arrived in India in the early 1600s for trade purposes but gradually expanded its influence and control over the Indian subcontinent.
+            <h1>CRAVE FOR SOMETHIMG SWEET AND SPICY?</h1>
+            <p>VISIT US NOW</p>
 
-                        Following the Battle of Plassey in 1757, the Company began to establish its rule, leading to widespread exploitation and oppression.
-                        
-                        By the mid-19th century, the British Crown had taken direct control, formally instituting the British Raj in 1858 after the Revolt of 1857, also known as the First War of Indian Independence.
-                        
-                        On July 4, 1947, the Indian Independence Bill was introduced in the British House of Colonials. British dominance came to an end after 200 years on August 15, 1947.
-                        
-                        You May Like
-                        Nandanpura - Finally, a hearing aid for real conversations at a surprising cost!
-                        Hear.com
-                          by TaboolaSponsored Links
-                        The British enacted the Indian Independence Act on July 18, 1947 and the entire act was the reason for the Indian Independence Movement, which had been active for a long period.
-                        
-                        Negotiations between the British government and Indian leaders, including Jawaharlal Nehru, Sardar Vallabhbhai Patel and Muhammad Ali Jinnah, led to the decision to partition the country into two separate nations: India and Pakistan. This was aimed at addressing the demands of the Muslim League, led by Jinnah, for a separate state for Muslims.</p>
-                        
-                        
-                    </div>
-                </div> 
-                <div class="sec3 img">
-        
-            
-            
-                    <img src="https://th.bing.com/th/id/OIP.osNqTS9CfbMkbN3bYLL8pQHaDd?w=316&h=163&c=7&r=0&o=5&dpr=1.3&pid=1.7"alt="">
-                    <div class="text3">
-                            
-                            
-                            
-                        </div>
-                    </div> 
-                    <div class="text4">
-                
-                        
-                        
-                    </div>
-                    <div class="text5">
-                
-                        <h1>THEME OF INDEPENDENCE DAY 2024</h1>
-                        <p>The theme for this year's celebrations is "Viksit Bharat," or "Developed India," which aligns with the Indian government's vision to transform the nation into a developed country by 2047, coinciding with the centenary of independence.
-
-                            As tradition dictates, the Independence Day celebrations will be held at the historic Red Fort in Delhi, where the Prime Minister will hoist the national flag and deliver a speech.This year's 78th Independence Day celebrations will see a diverse group of over 4,000 special guests, chosen from various sectors of society. Prime Minister Modi has identified farmers, youth, women, and the poor as the "four pillars of a developed India," and they are prominently featured in the guest list. In total, around 18,000 e-invitation cards have been issued.
-
-
-
-                            Read more at:
-                            https://economictimes.indiatimes.com/news/new-updates/78th-independence-day-history-significance-2024-theme-where-to-watch-pm-modis-speech-and-more/articleshow/112500053.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst</p>
-
-                        
-                    </div>
-                    
-                    </div>
-                    <div class="text6">
-                        <h1>SPECIAL GUEST THIS INDEPENDENCE DAY</h1>
-                        <P>ist: As the nation gears up to celebrate its 78th Independence Day on August 15, the Centre has curated a special guest list featuring over 4,000 individuals. This year’s celebrations will prominently include representatives from the four groups that Prime Minister Narendra Modi praised as the “four pillars of a developed India” during his Varanasi visit following his re-election for a third term in June.
-
-                            The special guests for this year’s celebrations include farmers, youth, women, and the poor — groups identified by PM Modi as vital to India’s progress. Each guest has been invited to attend the event at the Red Fort along with one family member. The 4,000 guests have been categorised into 11 groups. Notably, 1,000 individuals are from the Agriculture and Farmers’ Welfare category, 600 from Youth Affairs, and 300 from Women and Child Development.</P>
-                    </div>
-                    <div class="text7">
-                        <h1>BOOKING TICKETS</h1>
-                    </div>
-                    <div class="form">
-
-                        <fieldset>
-                            <h>BOOK YOUR VIP TICKETS</h><BR><br>
-                                <br>
-                            
-                            <label> Enter your Name</label>
-                            <input type="text" required > <br><br>
-                    
-                            <label> Enter your email</label>
-                            <input type="email"> <br>
-                            
-                            <br> <br> <br>
-                    
-                    
-                            <label> Enter your Phone</label>
-                            <input type="number"> <br> <br>
-                            <button>PAY FOR TICKET</button>
-                        </fieldset>
-                
-
-                        </fieldset>
-                    </div>
-
-        <footer>
-            <p style="color: plum;" >FOLLOW US</p>
-        <div>
-             <a href="https://github.com/ganeshdutt100">
-    <i class="fa-brands fa-facebook" style="color: blue; font-size:30px ;"></i>
-   </a>
-    <i class="fa-brands fa-instagram" style="color: rgb(213, 37, 66); font-size:30px ;"></i> 
-
-        </a>
+            <button>Know more </button>
         </div>
-        </footer>
+    </div>
+    <!-- ========== End Section-1 ========== -->
+    
+
+
+    <!-- ========== Start Section-2 ========== -->
+
+    <h1 class="sec2Heading">ABOUT OUR FOOD</h1>
+    <div class="empty"></div>
+    <div class="sec2">
+      
+        <div class="sec2Text">
+            <h2>We pride ourselves on making real food from the best ingredients.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus consequatur voluptas modi quidem consectetur omnis quos deleniti porro, sequi illo voluptatibus! Quia commodi qui sapiente maxime consequuntur consectetur odio.</p>
+            
+        </div>
+
+
+        <img src="https://ganeshdutt100.github.io/Foodies-G.D/img-1.png"alt="">
+    </div>
+    <!-- ========== End Section-2 ========== -->
+
+
+
+    <h1 class="sec2Heading">WE PRESENT TASTIEST FOOD</h1>
+    <div class="empty"></div>
+
+    <div class="sec3">
+        <span>
+        <img class="sec3Images" src="https://ganeshdutt100.github.io/Foodies-G.D/img-3.jpg" alt="">
+        <p>Rainbow Vegetable Sandwich<br>
+            price:$10.50 $11.70</p>
+
+        </span>
+        <span>
+        <img class="sec3Images" src="https://ganeshdutt100.github.io/Foodies-G.D/img-4.jpg" alt="">
+        <p>Vegetarian Burger<br>
+           price: $10.50 $11.70</p>
+        </span>
+        <span>
+        <img class="sec3Images" src="https://ganeshdutt100.github.io/Foodies-G.D/img-5.jpg" alt="">
+        <p>Raspberry Stuffed French Toast
+            <br>
+            price:$10.50 $11.70
+        </p>
+        </span>
+    </div>
+
+
+    <!-- ========== Start Section-4 ========== -->
+    
+    <h1 class="sec2Heading">BUMPER DISCOUNT THIS FESTIVE SEASON</h1>
+    <div class="empty"></div>
+   
+    
+    <div class="sec4">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2014/07/08/12/34/pizza-386717_1280.jpg" alt="">
+        <div class="cardText">
+            <h2>GET 40% OFF THIS FESTIVE SEASON</h2>
+            <p>GET UPTO 40% OFF ON ORDERS ABOVE Rs.1999</p>
+          <button>order now</button>
+      </div>
+
+        
+      
+    </div>
+    </div>
+     <!-- ========== End Section-4 ========== -->
+
+
+
+     <!-- ========== Start -5 ========== -->
+      
+     <h1 style="margin-top: 50px;" class="sec2Heading">JOIN PREMIMUM MEMBERSHIP</h1>
+     <div class="empty"></div>
+      <div class="sec5" >
+
+        <form action="">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="number" placeholder="Phone Number ">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="password">
+            <input type="submit" placeholder="proceed to pay">
+        </form>
+      </div>
+     <!-- ========== End -5 ========== -->
+     
+<div class="footer">
+     <footer>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis odit suscipit dolore necessitatibus tempore placeat </p>
+
+       <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+       </ul>
+
+       <form >
+         <input type="text" placeholder="Enter Your Email">
+         <button style="background-color: orange;">Subscribe</button>
+       </form>
+        
+     </footer>
+     <p>&copy; 2023 All rights reserved.</p>
+
+    </div>
 </body>
 </html>
